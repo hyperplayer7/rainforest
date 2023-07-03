@@ -6,7 +6,6 @@ initial_url = 'https://www.letsrevolutionizetesting.com/challenge.json'
 url = URI.parse(initial_url)
 
 loop do
-  puts url.to_s + "@@@@@@@@@@@@@@@"
   response = Net::HTTP.get(url)
   parsed_response = JSON.parse(response)
 
